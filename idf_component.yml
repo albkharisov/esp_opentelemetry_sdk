@@ -1,4 +1,4 @@
-version: "1.0.0"
+version: "1.0.3"
 description: "OpenTelemetry C++ Client SDK"
 url: "https://opentelemetry.io"
 documentation: "https://opentelemetry-cpp.readthedocs.io/en/latest/sdk/GettingStarted.html"
