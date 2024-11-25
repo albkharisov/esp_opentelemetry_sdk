@@ -45,9 +45,5 @@ target_link_libraries(${COMPONENT_LIB} INTERFACE
     opentelemetry_exporter_in_memory_metric
 )
 
-# This way we pass dependency name to esp_opentelemetry_api
-set_target_properties(${COMPONENT_LIB}
-    PROPERTIES
-        OPENTELEMETRY_API_TARGET opentelemetry_api
-)
+# The one left target (opentelemetry_api) will be pulled by opentelemetry_api component
 
