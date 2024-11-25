@@ -10,6 +10,16 @@ Use it to instrument, generate, collect, and export telemetry data (metrics,
 logs, and traces) to help you analyze your software’s performance and behavior.
 
 
+## How to use
+
+```
+idf.py add-dependency albkharisov/esp_opentelemetry_sdk && \
+idf.py add-dependency albkharisov/esp_opentelemetry_api
+```
+
+If you go another way and clone git-repo - don't forget to fetch submodules.
+
+
 ## Description
 
 This part provides an SDK for defining your exporters to send collected data.
