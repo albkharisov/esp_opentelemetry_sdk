@@ -1,0 +1,8 @@
+build/
+sdkconfig
+sdkconfig.old
+
+CMakeCache.txt
+
+*.DS_Store
+*/.cache
