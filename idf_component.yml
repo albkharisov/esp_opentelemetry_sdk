@@ -1,0 +1,11 @@
+version: "1.0.0"
+description: "OpenTelemetry C++ Client SDK"
+url: "https://opentelemetry.io"
+documentation: "https://opentelemetry-cpp.readthedocs.io/en/latest/sdk/GettingStarted.html"
+repository: "https://github.com/albkharisov/esp_opentelemetry_sdk.git"
+license: "MIT"
+tags:
+  - logs
+  - metrics
+dependencies:
+  idf: ">=5.0"

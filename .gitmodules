@@ -1,0 +1,3 @@
+[submodule "opentelemetry-cpp"]
+	path = opentelemetry-cpp
+	url = git@github.com:albkharisov/opentelemetry-cpp.git
