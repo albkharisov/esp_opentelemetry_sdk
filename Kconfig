@@ -1,0 +1,28 @@
+menu "opentelemetry"
+
+    config OPENTELEMETRY_USE_OTLP
+        bool "Use OTLP support in OpenTelemetry (requires protobuf)"
+        default n
+        help
+            If enabled - builds OTLP part of SDK for developing exporters
+
+    config OPENTELEMETRY_PROTOBUF_CMAKE_PATH
+        string "OpenTelemetry protobuf cmake path"
+        default "managed_components/albkharisov__esp_google_protobuf/cmake"
+        depends on OPENTELEMETRY_USE_OTLP
+        help
+            Path to ProtoConfig.cmake file to find protobuf for ESP-IDF
+
+    config OPENTELEMETRY_CUSTOM_PROTO_COMPONENT
+        string "Use custom component with generated proto-files"
+        default ""
+        depends on OPENTELEMETRY_USE_OTLP
+        help
+            OpenTelemetry has a target to generate proto-files for its needs,
+            but if you want to generate it yourself you use this option.
+            This is used if you want to pass Logs/Traces/Metrics over your
+            own wrapper of OTLP. Left blank for inner OpenTelemetry
+            implementation.
+
+endmenu # opentelemetry
+

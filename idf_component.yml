@@ -1,4 +1,4 @@
-version: "1.0.3"
+version: "1.0.4"
 description: "OpenTelemetry C++ Client SDK"
 url: "https://opentelemetry.io"
 documentation: "https://opentelemetry-cpp.readthedocs.io/en/latest/sdk/GettingStarted.html"
@@ -9,3 +9,4 @@ tags:
   - metrics
 dependencies:
   idf: ">=5.0"
+  albkharisov/esp_google_protobuf: '>=1.0.7'
